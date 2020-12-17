@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { OrderContext } from '../../context/orderContext';
 
 function Order() {
-    const orders = useContext(OrderContext);
+    const { orders } = useContext(OrderContext);
 
     return (
         <div className="container">

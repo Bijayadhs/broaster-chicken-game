@@ -9,14 +9,14 @@ import { OrderContext } from '../../context/orderContext';
 function Cook() {
     const chickenPieces = ['breast', 'ribs', 'wings', 'thigh', 'leg'];
     const [cookPiece, setCookPiece] = useState([]);
-    const orders = useContext(OrderContext);
+    const { selectedOrders } = useContext(OrderContext);
 
     return (
         <div className="container">
             <h4 className="new">New Order</h4>
 
             <div>
-                {orders.map((order) => (
+                {selectedOrders.map((order) => (
                     <CookItem key={order.id} order={order} />
                 ))}
             </div>

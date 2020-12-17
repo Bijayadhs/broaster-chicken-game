@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { OrderContext } from '../../context/orderContext';
 
-function CookItem({ order, selected }) {
+
+function CookItem({ order }) {
+    const { toggleSelection } = useContext(OrderContext)
+
 
     return (
         <div className="order-item">
             <h4>1x {order.pack}</h4>
-            <input type='checkbox' checked={selected}></input>
+            <input type='checkbox' checked={order.selected} onChange={toggleSelection}></input>
         </div>
     )
 }
