@@ -1,0 +1,21 @@
+h1{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 20px 0 40px 0;
+}
+.order-item{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h4{
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin-right: 20px;
+
+}
+.btn.btn-cook{
+    margin: 100px 40px;
+    display: block;
+  }
