@@ -45,6 +45,10 @@ a{
   justify-content: center;
   align-items: center;
 }
+img.broaster{
+  width: 300px;
+  height: 300px;
+}
 .btn{
   padding: 10px 20px ;
   background-color: var(--primary-color);
@@ -55,7 +59,7 @@ a{
   text-align: center;
 }
 .btn.btn-order{
-  margin: 40px;
+  margin:16px;
 }
 
 

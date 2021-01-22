@@ -16,10 +16,6 @@ export const OrderProvider = ({ children }) => {
         setOrders(orders.map(order => ({ ...order, selected: value })))
     }
 
-
-
-
-
     return (
         <OrderContext.Provider value={{ orders, selectedOrders, toggleSelection }}>
             {/* <ToggleContext.Provider value={toggleSelection}> */}

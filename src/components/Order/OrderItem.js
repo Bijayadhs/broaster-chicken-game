@@ -15,7 +15,7 @@ function OrderItem({ order }) {
 
     return (
         <div className="order-item">
-            <h4>1x {order.pack}</h4>
+            <h4>1x {order.pack} [{order.type}]</h4>
             <input type='checkbox' checked={order.selected} onChange={handleChange}></input>
         </div>
     )

@@ -7,7 +7,7 @@ function Home() {
     return (
         <div className="container">
             <div className="main">
-                <img src={broaster} alt='Broaster' />
+                <img className="broaster" src={broaster} alt='Broaster' />
                 <p>Much imitated, never duplicated, there is only one Genuine Broaster Chicken.</p>
                 <Link to='/order' className="btn btn-order">Start Taking Order</Link>
             </div>

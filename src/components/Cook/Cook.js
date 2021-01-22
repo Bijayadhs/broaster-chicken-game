@@ -10,6 +10,13 @@ function Cook() {
     const chickenPieces = ['breast', 'ribs', 'wings', 'thigh', 'leg'];
     const [cookPiece, setCookPiece] = useState([]);
     const { selectedOrders } = useContext(OrderContext);
+    function handleSelection(p) {
+        // console.log(p)
+        setCookPiece([...cookPiece, p]);
+    }
+
+
+    console.log(cookPiece)
 
     return (
         <div className="container">
@@ -20,7 +27,7 @@ function Cook() {
                     <CookItem key={order.id} order={order} />
                 ))}
             </div>
-            <div className="chicken">{chickenPieces.map(p => (<Piece key={p} piece={p} setCookPiece={setCookPiece} />))}</div>
+            <div className="chicken">{chickenPieces.map(p => (<Piece key={p} piece={p} handleSelection={handleSelection} />))}</div>
             <CookingBowl cookPiece={cookPiece} />
 
 
